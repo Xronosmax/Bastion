@@ -114,7 +114,7 @@ module.exports = async message => {
       }
       else {
         await message.client.database.models.guildMember.update({
-          experiencePoints: guildMemberModel.dataValues.experiencePoints + 1
+          experiencePoints: guildMemberModel.dataValues.experiencePoints + 4
         },
         {
           where: {
